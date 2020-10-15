@@ -5,21 +5,21 @@ a module for using linear algebraic mathematical objects on python. a personal e
 
 instance attributes : 
 
->*itself:   an array in the form [[row], [row], ..., [row]] 
+>itself:   an array in the form [[row], [row], ..., [row]] 
 
->*rowcount:  number of rows
+>rowcount:  number of rows
 
->*colcount:  number of columns
+>colcount:  number of columns
 
->*rows:   same as itself
+>rows:   same as itself
 
->*columns:  an array in the form [[column], [column], ..., [column]]
+>columns:  an array in the form [[column], [column], ..., [column]]
 
 instance methods:
 
->*show():   shows the matrix in a way that looks similar to notation in mathematics.
+>show():   shows the matrix in a way that looks similar to notation in mathematics.
 
->*scalar_multiple(scalar):  takes the scalar multiple of the matrix with the given scalar and returns another matrix.
+>scalar_multiple(scalar):  takes the scalar multiple of the matrix with the given scalar and returns another matrix.
 
 # class: vector
 
@@ -27,23 +27,23 @@ instance attributes :
 
 > same except:
 
-> *colcount is always 1, no rows or columns attributes.
+> colcount is always 1, no rows or columns attributes.
 
-> *additional norm attribute, with the value of the vector's norm (or magnitude)
+> additional norm attribute, with the value of the vector's norm (or magnitude)
 
 instance methods:
 
-> *show():  same as matrix
+> show():  same as matrix
 
-> *scalar_multiple(scalar):   same as matrix
+> scalar_multiple(scalar):   same as matrix
 
-> *isparallel(vector):    returns True if given vector is parallel to the vector in the argument, false otherwise.
+> isparallel(vector):    returns True if given vector is parallel to the vector in the argument, false otherwise.
 
-> *isorthogonal(vector):    returns True if given vector is orthogonal (perpendicular) to the vector in the argument, false otherwise.
+> isorthogonal(vector):    returns True if given vector is orthogonal (perpendicular) to the vector in the argument, false otherwise.
 
-> *projection(vector, rnd=16):    returns the projection vector of the given vector in respect to the vector in the argument. ( rnd = round)
+> projection(vector, rnd=16):    returns the projection vector of the given vector in respect to the vector in the argument. ( rnd = round)
 
-> *anglebetween(vector, rnd=16):    returns the angle (in radians) between the given vector and the vector in the argument. (rnd = round)
+> anglebetween(vector, rnd=16):    returns the angle (in radians) between the given vector and the vector in the argument. (rnd = round)
 
 # objects:
 
